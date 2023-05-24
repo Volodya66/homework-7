@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="button-burger-open">
+        <button type="button" class="button-burger-open js-open-menu">
           <svg width="32" height="22">
             <use href="./images/icons.svg#burger"></use>
           </svg>
@@ -59,6 +59,68 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <button type="button" class="mobile-menu-cloce js-close-menu">
+          <svg height="8" width="8" class="svg-menu">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="list-navigation-menu list">
+          <li class="">
+            <a href="./index.html" class="text-link-menu color-menu link"
+              >Studio</a
+            >
+          </li>
+          <li class="">
+            <a href="./portfolio.html" class="text-link-menu link">Portfolio</a>
+          </li>
+          <li class="" class="link">
+            <a href="" class="text-link-menu link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list-contacts-menu list">
+          <li class="card-contacts-menu number-card">
+            <a href="tel:+110001111111" class="link color-menu"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="card-contacts-menu">
+            <a href="mailto:info@devstudio.com" class="link mail-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-list modal-icon list">
+          <li class="list-icon">
+            <a href="" class="link-icon link">
+              <svg class="social-icon" width="16" height="16">
+                <use class="icona" href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-icon">
+            <a href="" class="link-icon link">
+              <svg class="social-icon" width="16" height="16">
+                <use class="icona" href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-icon">
+            <a href="" class="link-icon link">
+              <svg class="social-icon" width="16" height="16">
+                <use class="icona" href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-icon">
+            <a href="" class="link-icon link">
+              <svg class="social-icon" width="16" height="16">
+                <use class="icona" href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -146,8 +208,8 @@
           <ul class="list-card list">
             <li class="list-lists item">
               <img
-                class="image"
-                src="./images/doing/pg1.jpg"
+                srcset="./images/mobile@2x/doing1@2x.jpg 2x"
+                src="./images/mobile@1x/doing1.jpg"
                 alt="statistics"
                 width="360"
                 height="300"
@@ -155,8 +217,8 @@
             </li>
             <li class="list-lists item">
               <img
-                class="image"
-                src="./images/doing/pg2.jpg"
+                srcset="./images/mobile@2x/doing2@2x.jpg 2x"
+                src="./images/mobile@1x/doing2.jpg"
                 alt="displaying sections"
                 width="360"
                 height="300"
@@ -164,8 +226,8 @@
             </li>
             <li class="list-lists item">
               <img
-                class="image"
-                src="./images/doing/pg3.jpg"
+                srcset="./images/mobile@2x/doing3@2x.jpg 2x"
+                src="./images/mobile@1x/doing3.jpg"
                 alt="smartphone"
                 width="360"
                 height="300"
@@ -184,7 +246,8 @@
             <li class="team-list">
               <img
                 class="image"
-                src="./images/our_team/people1.jpg"
+                srcset="./images/mobile@2x/people-mob1@2x.jpg 2x"
+                src="./images/mobile@1x/people-mob1.jpg"
                 alt="Mark"
                 width="264"
                 height="260"
@@ -238,8 +301,9 @@
             </li>
             <li class="team-list">
               <img
+                srcset="./images/mobile@2x/people-mob2@2x.jpg 2x"
                 class="image"
-                src="./images/our_team/people2.jpg"
+                src="./images/mobile@1x/people-mob2.jpg"
                 alt="Tom"
                 width="264"
                 height="260"
@@ -293,8 +357,9 @@
             </li>
             <li class="team-list">
               <img
+                srcset="./images/mobile@2x/people-mob3@2x.jpg 2x"
                 class="image"
-                src="./images/our_team/people3.jpg"
+                src="./images/mobile@1x/people-mob3.jpg"
                 alt="Camila"
                 width="264"
                 height="260"
@@ -348,8 +413,9 @@
             </li>
             <li class="team-list">
               <img
+                srcset="./images/mobile@2x/people-mob4@2x.jpg 2x"
                 class="image"
-                src="./images/our_team/people4.jpg"
+                src="./images/mobile@1x/people-mob4.jpg"
                 alt="Daniel"
                 width="264"
                 height="260"
@@ -516,10 +582,10 @@
 
         <!-- Subscribe -->
 
-        <div>
+        <div class="width-footer">
           <p class="text-subscribe">Subscribe</p>
           <form class="form-footer">
-            <label>
+            <label class="width-footer">
               <input
                 name="user_email"
                 type="email"
@@ -540,7 +606,7 @@
 
     <!-- modal -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-window" data-modal-close>
           <svg class="icon-button-close" width="8" height="8">
@@ -629,10 +695,10 @@
           <button class="button-sabmit" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!--  -->
-
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
