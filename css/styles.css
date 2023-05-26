@@ -76,11 +76,6 @@ img {
 
 /*  */
 
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
 .container {
   padding-left: 16px;
   padding-right: 16px;
@@ -133,9 +128,8 @@ button {
 
 .nav-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .navigation {
@@ -508,7 +502,6 @@ button {
 }
 
 .footer-paragraph {
-  display: flex;
   color: var(--white-kolor);
   font-size: 16px;
   line-height: 1.5;
@@ -669,7 +662,7 @@ button {
   transform: translate(-50%, -50%);
 
   width: 408px;
-  height: 584px;
+  height: 600px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1154,13 +1147,31 @@ button {
   transition-timing-function: var(--timing-function);
 }
 
+@media screen and (max-width: 428px) {
+  .modal {
+    width: 320px;
+    height: auto;
+  }
+
+  .modal-icon {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 428px) {
+  .modal-icon {
+    gap: 56px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .icon-bg {
     display: none;
   }
+
   .section.aboutus {
     display: none;
   }
+
   .section.aboutus {
     display: none;
   }
@@ -1168,6 +1179,17 @@ button {
   .container {
     max-width: 428px;
   }
+
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   .nav-auth {
     display: flex;
   }
@@ -1179,6 +1201,9 @@ button {
 
   .button-burger-open {
     stroke: var(--title-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-section {
@@ -1190,8 +1215,16 @@ button {
     margin-bottom: 72px;
   }
 
+  .list-paragraph {
+    font-weight: 500;
+  }
+
   .list-title {
     text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
   }
 
   .list-combination:not(:last-child) {
@@ -1309,6 +1342,10 @@ button {
     gap: 40px;
   }
 
+  .current::after {
+    bottom: -25px;
+  }
+
   .list-section-two {
     display: flex;
     flex-wrap: wrap;
@@ -1316,6 +1353,11 @@ button {
   }
 
   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  .hero-name {
+    font-size: 56px;
+    line-height: 1.07;
+  }
 
   .company-icon-link {
     width: 168px;
@@ -1353,6 +1395,11 @@ button {
     width: 768px;
   }
 
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .icon-bg {
     display: none;
   }
@@ -1373,14 +1420,15 @@ button {
     flex-direction: column;
   }
 
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   .auth {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-  }
-
-  .current::after {
-    bottom: -33px;
   }
 
   .hero-section {
@@ -1410,6 +1458,10 @@ button {
     width: 356px;
   }
 
+  .list-paragraph {
+    font-weight: 500;
+  }
+
   .list-people {
     gap: 64px 24px;
   }
@@ -1419,12 +1471,26 @@ button {
     flex-wrap: wrap;
   }
 
+  .list-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .container-team {
+    width: 584px;
+  }
+
+  .container-customers {
+    width: 584px;
+  }
+
   .width-footer {
     max-width: 453px;
   }
 
   .footer-container {
-    padding: 0 108px;
+    width: 584px;
     gap: 74px 24px;
   }
 
@@ -1472,16 +1538,18 @@ button {
     padding-left: 15px;
   }
 
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .logo {
     margin-right: 76px;
-  }
-
-  .current::after {
-    bottom: -25px;
-  }
-
-  .nav-header {
-    align-items: center;
   }
 
   .address-auth {
@@ -1507,6 +1575,7 @@ button {
   }
 
   .hero {
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1522,12 +1591,23 @@ button {
 
   /*  */
 
-  .list-section-two {
-  }
-
   .list-combination {
     width: 264px;
     flex-direction: ((100% - 72px) / 4);
+  }
+
+  .list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .section.aboutus {
+    padding-top: 0;
+  }
+
+  .list-paragraph {
+    font-weight: 400;
   }
 
   .list-people {
