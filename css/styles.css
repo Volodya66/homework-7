@@ -1154,6 +1154,10 @@ button {
     height: auto;
   }
 
+  .wrapper-policy {
+    flex-shrink: 0;
+  }
+
   .modal-icon {
     gap: 24px;
   }
@@ -1214,6 +1218,8 @@ button {
 
   .hero-name {
     margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
   }
 
   .list-paragraph {
@@ -1274,8 +1280,9 @@ button {
     flex-direction: column;
   }
 
-  .imput-email-footer {
+  .label-footer {
     margin-bottom: 16px;
+    width: 100%;
   }
 
   .hero {
@@ -1358,6 +1365,7 @@ button {
   .hero-name {
     font-size: 56px;
     line-height: 1.07;
+    font-size: 36px;
   }
 
   .company-icon-link {
